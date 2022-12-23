@@ -1,0 +1,190 @@
+@media (min-width: 421px) {
+}
+
+@media (min-width: 481px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .sm-visible {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) {
+}
+
+@media (min-width: 1200px) {
+    .link-moore:hover {
+        color: var(--color-gray-2);
+        text-decoration: none;
+    }
+    .nav--theme-white .nav__link:hover {
+        color: var(--color-gray-1);
+    }
+    .nav--theme-gray .nav__link:hover {
+        color: var(--color-white-1);
+    }
+    a.nav__link.is-current:after {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .header__btn-toggle {
+        display: none;
+    }
+    .scroll-up:hover {
+        background: var(--color-dark-2);
+    }
+}
+
+@media (max-width: 1360px) {
+}
+
+@media (max-width: 1199px) {
+    :root {
+        --font-size-default: 4rem;
+    }
+    html {
+        font-size: .5vw;
+    }
+    body.is-menu-opened {
+        overflow: hidden;
+    }
+    .btn--size-md {
+        --btn-size: 10rem;
+        --btn-padding-x: 10rem;
+        --btn-padding-y: 4rem;
+        --btn-fs: 4rem;
+    }
+    a.nav__link:not(.is-current) {
+        opacity: .5;
+    }
+    .header {
+        padding: 10rem 0;
+    }
+    .header__container {
+        text-align: center;
+    }
+    .header__dropdown {
+        background: rgba(0,0,0,.8);
+        width: 100%;
+        height: 100%;
+        padding: 100px var(--gap);
+        -webkit-box-pack: initial;
+            -ms-flex-pack: initial;
+                justify-content: initial;
+        -webkit-box-align: initial;
+            -ms-flex-align: initial;
+                align-items: initial;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        -webkit-transition-property: opacity, visibility;
+        -o-transition-property: opacity, visibility;
+        transition-property: opacity, visibility;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 12;
+    }
+    .header__dropdown:not(.is-show) {
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header__sc,
+    .header__nav {
+        width: 100%;
+    }
+    .header__sc {
+        margin-bottom: auto;
+    }
+    .header__nav {
+        margin-top: auto;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
+    }
+    .header__nav.nav--theme-gray {
+        color: var(--color-white-1);
+    }
+    .nav__list {
+        margin: 0;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .nav__item {
+        width: 100%;
+        margin: 0;
+    }
+    .nav__link {
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 5rem;
+        text-align: center;
+    }
+    .project-about__content,
+    .info-section__block {
+        max-width: 100%;
+    }
+    .info-section__copyright {
+        font-size: 3rem;
+    }
+    .intro__content {
+        padding-bottom: 2vw;
+    }
+    .intro__title {
+        line-height: 1.15;
+    }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 767px) {
+    :root {
+        --font-title-size-1: 17rem;
+        --font-title-size-2: 11rem;
+        --font-title-size-3: 8rem;
+    }
+    html {
+        font-size: .7vw;
+    }
+    .info-section__block {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .info-section__block-media {
+        max-width: 100%;
+        margin: 0 0 7rem;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+    .info-section__poster {
+        max-width: 100%;
+    }
+    .info-section__copyright {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-default: 5rem;
+    }
+}
+
+@media (max-width: 420px) {
+}
