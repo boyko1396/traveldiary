@@ -735,9 +735,69 @@ a.nav__link.is-current {
 =====================*/
 
 .project-card {
-    padding: 11rem 0;
+    background: var(--color-dark-1);
     color: var(--color-white-1);
     position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.project-card__view-project {
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    right: 18rem;
+    bottom: 6rem;
+    transition: all .4s;
+}
+
+.project-card__container.is-opened ~ .project-card__view-project:not(:hover) {
+    transition-delay: .8s;
+}
+
+.project-card__view-project:hover {
+    text-decoration: none;
+}
+
+.project-card__view-project:before {
+    content: '';
+    position: absolute;
+    top: -.6rem;
+    right: -.6rem;
+    bottom: -.6rem;
+    left: -.6rem;
+}
+
+.project-card__container:not(.is-opened) ~ .project-card__view-project {
+    transform: translateX(30rem);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.project-card__container {
+    height: 20.3125vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all .24s linear;
+}
+
+.project-card__container:hover {
+    opacity: .6;
+}
+
+.project-card__container.is-opened:hover {
+    opacity: 1;
+}
+
+.project-card__container.is-opened {
+    height: 100vh;
+    transition-delay: .4s;
+}
+
+.project-card__container:not(.is-opened) {
 }
 
 .project-card__img {

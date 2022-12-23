@@ -40,6 +40,9 @@
     .scroll-up:hover {
         background: var(--color-dark-2);
     }
+    .project-card__view-project:hover {
+        color: var(--color-gray-1);
+    }
 }
 
 @media (max-width: 1360px) {
@@ -144,6 +147,10 @@
     }
     .intro__title {
         line-height: 1.15;
+    }
+    .scroll-up {
+        width: 9rem;
+        height: 9rem;
     }
 }
 

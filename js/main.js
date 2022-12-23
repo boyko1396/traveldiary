@@ -33,8 +33,21 @@ $(window).scroll(function() {
 
 // scroll target
 $('.js-scroll-target').on('click', function (event){
-    event.preventDefault();
-    var scrollId = $(this).attr('href');
-    var scrollHeightTop = $(scrollId).offset().top;
-    $('body, html').animate({scrollTop: scrollHeightTop}, 650);
+  event.preventDefault();
+  var scrollId = $(this).attr('href');
+  var scrollHeightTop = $(scrollId).offset().top;
+  $('body, html').animate({scrollTop: scrollHeightTop}, 650);
 });
+
+// project card
+function clickHere(element){
+  const containerOfProjectsComponent = element.getElementsByClassName('project-card__container')
+
+  const delayTwo = async (ks) => await new Promise(resolve => setTimeout(resolve, ks));
+    const actionWithDelayTwo = async () => {
+      await delayTwo(400);
+      containerOfProjectsComponent[0].scrollIntoView({ block: 'start'})
+      containerOfProjectsComponent[0].classList.toggle('is-opened')
+  }
+  actionWithDelayTwo()
+}
