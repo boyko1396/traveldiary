@@ -615,6 +615,7 @@ a.nav__link.is-current {
     width: 100vw !important;
     height: 100vh !important;
     display: block;
+    object-fit: cover;
 }
 
 /* header

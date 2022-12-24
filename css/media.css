@@ -156,6 +156,9 @@
         width: 3.2rem;
         height: 7.6rem;
     }
+    .project-card__view-project {
+        font-size: 4rem;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -185,6 +188,12 @@
     }
     .info-section__copyright {
         font-size: 4rem;
+    }
+    .project-card__container {
+        height: 25vw;
+    }
+    .project-card__view-project {
+        font-size: 6rem;
     }
 }
 
