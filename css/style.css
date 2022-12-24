@@ -596,6 +596,12 @@ a.nav__link.is-current {
     display: block;
 }
 
+.fslightbox-source {
+    width: 100vw !important;
+    height: 100vh !important;
+    display: block;
+}
+
 /* header
 =====================*/
 
@@ -739,20 +745,15 @@ a.nav__link.is-current {
     color: var(--color-white-1);
     position: relative;
     overflow: hidden;
-    z-index: 0;
 }
 
 .project-card__view-project {
     font-weight: bold;
     font-size: 2rem;
     position: absolute;
-    right: 18rem;
+    right: 6rem;
     bottom: 6rem;
     transition: all .4s;
-}
-
-.project-card__container.is-opened ~ .project-card__view-project:not(:hover) {
-    transition-delay: .8s;
 }
 
 .project-card__view-project:hover {
@@ -768,8 +769,7 @@ a.nav__link.is-current {
     left: -.6rem;
 }
 
-.project-card__container:not(.is-opened) ~ .project-card__view-project {
-    transform: translateX(30rem);
+.project-card__container:not(.is-opened) .project-card__view-project {
     opacity: 0;
     visibility: hidden;
 }
@@ -780,24 +780,23 @@ a.nav__link.is-current {
     flex-direction: column;
     justify-content: center;
     user-select: none;
+    position: relative;
     cursor: pointer;
     transition: all .24s linear;
+    z-index: 1;
 }
 
 .project-card__container:hover {
     opacity: .6;
 }
 
-.project-card__container.is-opened:hover {
-    opacity: 1;
-}
-
 .project-card__container.is-opened {
     height: 100vh;
-    transition-delay: .4s;
+    z-index: 5;
 }
 
-.project-card__container:not(.is-opened) {
+.project-card__container.is-opened:hover {
+    opacity: 1;
 }
 
 .project-card__img {

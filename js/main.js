@@ -44,10 +44,10 @@ function clickHere(element){
   const containerOfProjectsComponent = element.getElementsByClassName('project-card__container')
 
   const delayTwo = async (ks) => await new Promise(resolve => setTimeout(resolve, ks));
-    const actionWithDelayTwo = async () => {
-      await delayTwo(400);
-      containerOfProjectsComponent[0].scrollIntoView({ block: 'start'})
-      containerOfProjectsComponent[0].classList.toggle('is-opened')
+  const actionWithDelayTwo = async () => {
+    await delayTwo(50);
+    containerOfProjectsComponent[0].scrollIntoView({ block: 'start', behavior: 'smooth'})
+    containerOfProjectsComponent[0].classList.toggle('is-opened')
   }
   actionWithDelayTwo()
 }
