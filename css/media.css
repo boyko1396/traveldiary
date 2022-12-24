@@ -131,8 +131,8 @@
     }
     .nav__link {
         margin: 0;
-        padding: 1rem 0;
-        font-size: 5rem;
+        padding: 2rem 0;
+        font-size: 8rem;
         text-align: center;
     }
     .project-about__content,
@@ -143,14 +143,18 @@
         font-size: 3rem;
     }
     .intro__content {
-        padding-bottom: 2vw;
+        padding-bottom: 16vw;
     }
     .intro__title {
         line-height: 1.15;
     }
     .scroll-up {
-        width: 9rem;
-        height: 9rem;
+        width: 18rem;
+        height: 18rem;
+    }
+    .scroll-up__icon {
+        width: 3.2rem;
+        height: 7.6rem;
     }
 }
 
@@ -189,7 +193,7 @@
 
 @media (max-width: 480px) {
     :root {
-        --font-size-default: 5rem;
+        --font-size-default: 6.2rem;
     }
 }
 
