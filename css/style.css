@@ -463,10 +463,15 @@ a.nav__link.is-current {
 .link-moore {
     display: inline-block;
     font-weight: bold;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    font-size: var(--font-size-default);
+    -webkit-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
     position: relative;
+}
+
+.link-moore.is-active {
+    font-size: 0;
 }
 
 .link-moore:before {
@@ -476,6 +481,16 @@ a.nav__link.is-current {
     right: -.6rem;
     bottom: -.6rem;
     left: -.6rem;
+}
+
+.link-moore:after {
+    content: attr(data-title-active);
+    display: none;
+    font-size: var(--font-size-default);
+}
+
+.link-moore.is-active:after {
+    display: block;
 }
 
 .btn-toggle {
@@ -729,11 +744,11 @@ a.nav__link.is-current {
     margin: 0 0 6rem;
 }
 
-.project-about__text:not(.is-show) p.is-hide {
-    display: none;
+.project-about__text-moore {
+    margin: 0 0 6rem;
 }
 
-.project-about__link-moore.is-hide {
+.project-about__text-moore {
     display: none;
 }
 
